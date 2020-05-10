@@ -2,10 +2,18 @@ package com.github.abigail830.bookmytime
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
+import org.springframework.context.annotation.Bean
+import org.springframework.web.servlet.config.annotation.CorsRegistry
 
-@SpringBootApplication(scanBasePackages = ["com.github.abigail830.bookmytime"])
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer
+
+
+
+
+@SpringBootApplication
 class BookMyTimeBeApplication
 
 fun main(args: Array<String>) {
 	runApplication<BookMyTimeBeApplication>(*args)
 }
+
